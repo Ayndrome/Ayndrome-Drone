@@ -3,11 +3,11 @@ function BusinessPage() {
     return (
       <div className="flex flex-col">
         {/* Hero Section */}
-        <div className="bg-black text-white py-16">
-          <div className="container mx-auto px-6">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Ayndrome Business.</h1>
-            <p className="text-xl mb-8 max-w-2xl">Revolutionize your logistics with our autonomous drone delivery solutions.</p>
-            <button className="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition duration-200">
+        <div className="  py-16 bg-gray-80">
+          <div className="container mx-auto px-6 flex flex-col justify-center items-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 ">Ayndrome Business.</h1>
+            <p className="text-xl mb-8 max-w-2xl ">Revolutionize your logistics with our autonomous drone delivery solutions.</p>
+            <button className=" px-8 py-3 rounded-full font-bold hover:bg-black hover:text-white ring-1 ring-black transition duration-200">
               Get Started
             </button>
           </div>
@@ -18,25 +18,25 @@ function BusinessPage() {
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-12">Business Solutions</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="bg-white p-6 rounded-lg shadow-md bg-white">
                 <div className="w-full h-48 bg-gray-200 rounded mb-4 flex items-center justify-center">
-                  <p className="text-gray-500">Solution Image 1</p>
+                  <img className="object-fit w-full h-full" src="../assets/last-mile.avif" alt="" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Last-Mile Delivery</h3>
+                <h3 className="text-xl font-bold mb-2 text-black">Last-Mile Delivery</h3>
                 <p className="text-gray-600">Reduce delivery times and costs with our autonomous drone fleet for last-mile logistics.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="w-full h-48 bg-gray-200 rounded mb-4 flex items-center justify-center">
-                  <p className="text-gray-500">Solution Image 2</p>
+                <img className="object-full w-full h-full" src="../assets/on-demand2.jpg" alt="" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">On-Demand Delivery</h3>
+                <h3 className="text-xl font-bold mb-2 text-black">On-Demand Delivery</h3>
                 <p className="text-gray-600">Offer your customers fast, on-demand delivery for urgent items and time-sensitive packages.</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="w-full h-48 bg-gray-200 rounded mb-4 flex items-center justify-center">
-                  <p className="text-gray-500">Solution Image 3</p>
+                <img className="object-full w-full h-full" src="../assets/apiIntegration.png" alt="" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">API Integration</h3>
+                <h3 className="text-xl font-bold mb-2 text-black ">API Integration</h3>
                 <p className="text-gray-600">Seamlessly integrate drone delivery into your existing e-commerce and logistics systems.</p>
               </div>
             </div>
@@ -44,44 +44,44 @@ function BusinessPage() {
         </div>
   
         {/* Benefits Section */}
-        <div className="py-16 bg-gray-50">
+        <div className="py-16 bg-black text-white">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-12">Benefits for Your Business</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-5">
               <div className="flex items-start">
-                <div className="bg-blue-100 p-3 rounded-full mr-4">
-                  <span className="text-blue-600 font-bold">✓</span>
+                <div className="mr-4 bg-white p-4 rounded-full">
+                  <span className="text-green-500 font-bold">✓</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Faster Deliveries</h3>
-                  <p className="text-gray-600">Reduce delivery times from hours to minutes, improving customer satisfaction.</p>
+                  <p>Reduce delivery times from hours to minutes, improving customer satisfaction.</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="bg-blue-100 p-3 rounded-full mr-4">
-                  <span className="text-blue-600 font-bold">✓</span>
+                <div className="mr-4 bg-white p-4 rounded-full">
+                  <span className=" text-green-500 font-bold">✓</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Cost Reduction</h3>
-                  <p className="text-gray-600">Cut delivery costs by up to 70% compared to traditional delivery methods.</p>
+                  <p className="">Cut delivery costs by up to 70% compared to traditional delivery methods.</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="bg-blue-100 p-3 rounded-full mr-4">
-                  <span className="text-blue-600 font-bold">✓</span>
+                <div className="mr-4 bg-white p-4 rounded-full">
+                  <span className="text-green-500 font-bold">✓</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Eco-Friendly</h3>
-                  <p className="text-gray-600">Reduce your carbon footprint with zero-emission electric drone deliveries.</p>
+                  <p >Reduce your carbon footprint with zero-emission electric drone deliveries.</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="bg-blue-100 p-3 rounded-full mr-4">
-                  <span className="text-blue-600 font-bold">✓</span>
+                <div className="mr-4 bg-white p-4 rounded-full">
+                  <span className="text-green-500 font-bold">✓</span>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Expanded Delivery Range</h3>
-                  <p className="text-gray-600">Reach customers in areas difficult to access by traditional delivery methods.</p>
+                  <p >Reach customers in areas difficult to access by traditional delivery methods.</p>
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@ function BusinessPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="w-full h-48 bg-gray-200 rounded mb-4 flex items-center justify-center">
-                  <p className="text-gray-500">Case Study Image 1</p>
+                  <img className="object-fit w-full h-full" src="../assets/foodDelivery.jpg" alt="" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">FreshEats Restaurant Chain</h3>
                 <p className="text-gray-600 mb-4">Reduced delivery times by 68% and increased order volume by 42% after implementing DroneDrop for their food delivery service.</p>
@@ -103,7 +103,7 @@ function BusinessPage() {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <div className="w-full h-48 bg-gray-200 rounded mb-4 flex items-center justify-center">
-                  <p className="text-gray-500">Case Study Image 2</p>
+                  <img className="object-fit w-full h-full" src="../assets/meds.jpg" alt="" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">MediQuick Pharmacy</h3>
                 <p className="text-gray-600 mb-4">Implemented urgent medication delivery via DroneDrop, resulting in life-saving 15-minute delivery times and 98% customer satisfaction.</p>
@@ -147,7 +147,7 @@ function BusinessPage() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white p-4 rounded-full font-bold hover:bg-blue-700 transition duration-200"
+                  className="w-full bg-black text-white p-4 rounded-full font-bold "
                 >
                   Request a Consultation
                 </button>

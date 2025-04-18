@@ -324,4 +324,18 @@ if (document.querySelector(".modelContainer")) {
 
 }, 100);
 
+// var navbar = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".navbar",
+//     start: "top+=40 top+=20",
+//     end: "top+=100 top",
+//     markers: true,
+//   }
+// });
+
+// navbar.to(".nav-1", {
+//   opacity: 0,
+  
+// })
+
 

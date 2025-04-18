@@ -88,16 +88,16 @@ function Navbar() {
           </button>
 
           <div className="hidden sm:flex items-center space-x-8">
-            <Link to="/app/operate" className="text-sm hover:text-gray-400 transition duration-200">Operate</Link>
             <Link to="/app/about" className="text-sm hover:text-gray-400 transition duration-200">About</Link>
             <Link to="/app/business" className="text-sm hover:text-gray-400 transition duration-200">Business</Link>
+            <Link to="/app/operate" className="text-sm hover:text-gray-400 transition duration-200">Operate</Link>
           </div>
 
           <div className="hidden sm:flex items-center space-x-6">
             <Link to="/app/help" className="text-sm hover:text-gray-400 transition duration-200">Help</Link>
             {user ? (
               <div className="flex items-center space-x-4">
-                <Link to="/app/profile" className="flex items-center space-x-2 hover:text-gray-400 transition duration-200">
+                <Link to="profile" className="flex items-center space-x-2 hover:text-gray-400 transition duration-200">
                   <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-black">
                     {user.first_name?.[0]}{user.last_name?.[0]}
                   </div>
@@ -131,28 +131,28 @@ function Navbar() {
         >
           <div className="py-4 space-y-4">
             <Link
-              to="/app/operate"
+              to="map"
               className="block text-sm hover:text-gray-400 transition duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Operate
+              Map
             </Link>
             <Link
-              to="/app/about"
-              className="block text-sm hover:text-gray-400 transition duration-200"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              About
-            </Link>
-            <Link
-              to="/app/business"
+              to="business"
               className="block text-sm hover:text-gray-400 transition duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Business
             </Link>
             <Link
-              to="/app/help"
+              to="operate"
+              className="block text-sm hover:text-gray-400 transition duration-200"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Operate
+            </Link>
+            <Link
+              to="help"
               className="block text-sm hover:text-gray-400 transition duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -161,7 +161,7 @@ function Navbar() {
             {user ? (
               <div className="space-y-4">
                 <Link
-                  to="/app/profile"
+                  to="profile"
                   className="flex items-center space-x-2 hover:text-gray-400 transition duration-200"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -183,14 +183,14 @@ function Navbar() {
             ) : (
               <div className="space-y-4">
                 <Link
-                  to="/app/login"
+                  to="login"
                   className="block text-sm hover:text-gray-400 transition duration-200"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Login
                 </Link>
                 <Link
-                  to="/app/signup"
+                  to="signup"
                   className="block bg-white text-black px-4 py-2 rounded-full text-sm hover:bg-gray-200 transition duration-200 text-center"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
