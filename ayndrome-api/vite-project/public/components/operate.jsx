@@ -16,7 +16,7 @@ function OperatePage() {
   
         {/* Benefits Section */}
         <div className="py-16">
-          <div className="container mx-auto px-6">
+          <div className="container mx-auto px-6"> {/*here comes the cards */}
             <h2 className="text-3xl font-bold text-center mb-12">Why Operate With Us?</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md hover:scale-110 transition duration-400"> 
@@ -47,7 +47,7 @@ function OperatePage() {
   
         {/* Requirements Section */}
         <div className="py-16">
-          <div className="container  px-6 bg-black p-12 w-full">
+          <div className="container  px-6 bg-black p-12 w-full"> {/* here is the cards section */}
             <h2 className="text-3xl font-bold text-center mb-12 text-white">Requirements</h2>
             <div className="max-w-3xl mx-auto">
               <div className="bg-white p-8 rounded-lg shadow-md">
