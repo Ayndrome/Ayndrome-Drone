@@ -213,7 +213,7 @@ function LandingPage() {
                   </div>
                   <button
                     onClick={handleScheduleDelivery}
-                    className="w-full bg-purple-600 text-white p-2 sm:p-3 rounded-full font-bold hover:bg-purple-700 transition duration-200 text-sm sm:text-base"
+                    className="w-full bg-black text-white p-2 sm:p-3 rounded-full font-bold hover:bg-white hover:text-black hover:ring-1 hover:ring-black transition duration-200 text-sm sm:text-base"
                   >
                     Schedule Delivery
                   </button>
