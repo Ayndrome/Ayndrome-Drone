@@ -16,8 +16,10 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 CORS(app)
 
-# Configure OpenRouter API
-OPENROUTER_API_KEY = 'REDACTED'
+# Configure OpenRouter API (set OPENROUTER_API_KEY in environment / .env — never commit secrets)
+OPENROUTER_API_KEY = os.environ.get('OPENROUTER_API_KEY')
+if not OPENROUTER_API_KEY:
+    raise RuntimeError('OPENROUTER_API_KEY environment variable is not set')
 client = OpenAI(
     api_key=OPENROUTER_API_KEY,
     base_url="https://openrouter.ai/api/v1",
