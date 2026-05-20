@@ -16,18 +16,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 CORS(app)
 
-# Configure OpenRouter API (set OPENROUTER_API_KEY in environment / .env — never commit secrets)
-OPENROUTER_API_KEY = os.environ.get('OPENROUTER_API_KEY')
-if not OPENROUTER_API_KEY:
-    raise RuntimeError('OPENROUTER_API_KEY environment variable is not set')
-client = OpenAI(
-    api_key=OPENROUTER_API_KEY,
-    base_url="https://openrouter.ai/api/v1",
-    default_headers={
-        "HTTP-Referer": "http://localhost:5000",
-        "X-Title": "Ayndrome Delivery Assistant",
-    }
-)
+
 
 def convert_audio_to_wav(input_file, output_file):
     """Convert any audio format to WAV using ffmpeg"""
