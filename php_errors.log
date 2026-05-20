@@ -1,0 +1,2 @@
+[24-Apr-2025 20:35:09 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\ayndrome-api\api\get_track_parcels.php on line 21
+[24-Apr-2025 20:35:46 Europe/Berlin] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\ayndrome-api\api\get_track_parcels.php on line 21

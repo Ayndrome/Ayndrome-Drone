@@ -1,0 +1,31 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies and build
+node_modules/
+vendor/
+dist/
+dist-ssr/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+api/php_errors.log
+api/order_creation.log
+php_errors.log
+
+# Firebase / credentials
+*firebase-adminsdk*.json
+
+# Archives
+api.zip
+*.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
